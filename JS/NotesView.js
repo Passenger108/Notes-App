@@ -11,8 +11,8 @@ export default class NotesView {
                 <div class="notes__list"></div>
             </div>
             <div class="notes__preview">
-                <input class="notes__title" type="text" placeholder="New Note...">
-                <textarea class="notes__body">Take Note...</textarea>
+                <input class="notes__title" type="text" placeholder="Title">
+                <textarea class="notes__body" placeholder="Start here ..."></textarea>
             </div>
         `;
 
@@ -37,14 +37,14 @@ export default class NotesView {
     }
 
     _createListItemHTML(id, title, body, updated) {
-        const MAX_BODY_LENGTH = 60;
+        const MAX_LENGTH = 12;
 
         return `
             <div class="notes__list-item" data-note-id="${id}">
-                <div class="notes__small-title">${title}</div>
+                <div class="notes__small-title">${title.length > MAX_LENGTH ? title.substring(0, MAX_LENGTH) + " ..." : title}</div>
                 <div class="notes__small-body">
-                    ${body.substring(0, MAX_BODY_LENGTH)}
-                    ${body.length > MAX_BODY_LENGTH ? "..." : ""}
+                    ${body.substring(0, MAX_LENGTH)}
+                    ${body.length > MAX_LENGTH ? "..." : ""}
                 </div>
                 <div class="notes__small-updated">
                     ${updated.toLocaleString(undefined, { dateStyle: "full", timeStyle: "short" })}
