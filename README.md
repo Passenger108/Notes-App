@@ -5,11 +5,9 @@ A simple **Notes Application** built using **JavaScript, HTML, and CSS**. This a
 ---
 
 ## 📸 Screenshots
-| Notes App UI | Editing a Note |
-|-------------|---------------|
-| ![1. ](screenshots/Screenshot%202025-03-08%20at%2011.31.12 PM.png) | ![2. ](screenshots/Screenshot%202025-03-08%20at%2011.32.16 PM.png) | ![3. ](screenshots/Screenshot%202025-03-08%20at%2011.32.35 PM.png) |
-
-*(Replace with actual image paths)*
+| Notes App UI | Editing a Note | Another Screenshot |
+|-------------|---------------|--------------------|
+| ![1.](screenshots/Screenshot%202025-03-08%20at%2011.31.12 PM.png) | ![2.](screenshots/Screenshot%202025-03-08%20at%2011.32.16 PM.png) | ![3.](screenshots/Screenshot%202025-03-08%20at%2011.32.35 PM.png) |
 
 ---
 
@@ -100,4 +98,3 @@ This project follows the **Separation of Concerns** principle by dividing logic 
 
 🔥 **Enjoy using the Notes App? Don't forget to ⭐ the repo!** ⭐
 
-https://passenger108.github.io/Notes-App/
